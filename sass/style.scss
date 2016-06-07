@@ -1,7 +1,14 @@
+// colors
 $theme-blue: rgb(41, 126, 183);
 $theme-light: rgb(200, 205, 206);
 $theme-dark: rgb(50, 51, 51);
 $white: rgb(254, 254, 254);
+
+// headers
+%content-header {
+	text-transform: uppercase;
+	font-size: 2.2rem;
+}
 /*
 * Theme Name: HackerYou Starter Theme
 * Theme URI: http://hackeryou.com;
@@ -22,6 +29,16 @@ $white: rgb(254, 254, 254);
 Default Styling
 ====================================
 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Lato, Helvetica Nueue, sans-serif;
+	font-weight: 300;
+}
 
 h1,
 h2,
@@ -62,8 +79,9 @@ body {
 }
 
 // Hero header start
-.container.hero {
-	max-width: 1680px;
+
+.hero-content {
+	// max-width: 1400px;
 	margin: 0 auto;
 	height: 100vh;
 	width: 100vw;
@@ -71,25 +89,32 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: Lato, Helvetica Nueue, sans-serif;
 	text-transform: uppercase;
+	font-weight: 300;
 
 	h1 {
 		color: $white;
 		font-weight: 300;
 		font-size: 3.6rem;
+		margin-bottom: 32px;
 	}
 }
 
 li.text-slides {
 	color: $white;
 	font-size: 2.5rem;
+	line-height: 56px;
 	text-align: center;
 	background: rgba(0, 0, 0, .4);
 	padding: 20px 120px;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
-	font-weight: 300;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	margin-bottom: 56px;
+
+}
+
+.color-blue {
+	color: $theme-blue;
 }
 
 .social {
@@ -97,10 +122,12 @@ li.text-slides {
 
 	h3 {
 		color: $white;
+		font-weight: 300;
+		margin-bottom: 24px;
 	}
 }
 
-.social ul.social-links {
+#menu-social-links {
 	display: flex;
 	flex-direction: row;
 	li {
@@ -114,7 +141,7 @@ li.text-slides {
 			padding: 4px 0 0 1px;
 			width: 32px;
 			height: 32px;
-			margin: 0 4px;
+			margin: 0 2px;
 			background: rgba(0, 0, 0, .5);
 			color: #fff;
 			-webkit-border-radius: 3px;
@@ -123,18 +150,137 @@ li.text-slides {
 
 			&:hover {
 				background: rgba(0, 0, 0, .7);
-				color: #e74c3c;
+				color: $theme-blue;
 			}
 		}
 	}
 }
 
+// header down arrow 
+
+a.header-down-arrow {
+	color: $white;
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: 100px;
+
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+
+	&:after {
+		content: "\2329";
+	}
+
+	&:hover {
+		color: $theme-blue;
+	}
+}
+
+
+
+
 // Hero header end
 
 
 
+// Contact start
+.contact-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 48px 0;
 
+	h2,
+	h3 {
+		@extend %content-header ;
+		margin-bottom: 8px;
+	}
 
+	h2 {
+		color: $theme-blue;
+	}
 
+	h3 {
+		font-size: 1.4rem;
+	}
+}
 
+.contact-form-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+}
 
+.contact-form-info,
+.contact-form-message {
+	width: 50%;
+		input, textarea {
+			width: calc(100% - 20px);
+			margin: 0 10px;
+		}
+}
+.contact-form-info {
+	display: flex;
+	flex-direction: column;
+}
+
+// Contact end
+// Footer start
+.footer {
+	background: $theme-light;
+	padding: 24px 0;
+	height: 262px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.075rem;
+	position: relative;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 2rem;
+		margin-bottom: 24px;
+	}
+	.footer-phone-email {
+		margin: 12px 0;
+	}
+	.menu {
+		@extend	#menu-social-links;
+	}
+
+	.footer-email {
+		cursor: pointer;
+		transition: .3s ease;
+		margin-bottom: 24px;
+
+		&:hover {
+			color: $theme-dark;
+		}
+	}
+}
+.button-to-top-container {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: -20px
+}
+.button-to-top{
+	padding: 4px 0;
+	width: 32px;
+	height: 32px;
+	background: $theme-light;
+	color: $theme-dark;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	&:hover {
+		color: $theme-blue;
+	}
+}
+// Footer end
