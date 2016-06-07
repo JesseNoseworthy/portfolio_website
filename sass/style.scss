@@ -1,3 +1,7 @@
+$theme-blue: rgb(41, 126, 183);
+$theme-light: rgb(200, 205, 206);
+$theme-dark: rgb(50, 51, 51);
+$white: rgb(254, 254, 254);
 /*
 * Theme Name: HackerYou Starter Theme
 * Theme URI: http://hackeryou.com;
@@ -18,6 +22,21 @@
 Default Styling
 ====================================
 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
 
 img {
 	max-width: 100%;
@@ -41,6 +60,76 @@ body {
 .full {
 	width: 100%;
 }
+
+// Hero header start
+.container.hero {
+	max-width: 1680px;
+	margin: 0 auto;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Lato, Helvetica Nueue, sans-serif;
+	text-transform: uppercase;
+
+	h1 {
+		color: $white;
+		font-weight: 300;
+		font-size: 3.6rem;
+	}
+}
+
+li.text-slides {
+	color: $white;
+	font-size: 2.5rem;
+	text-align: center;
+	background: rgba(0, 0, 0, .4);
+	padding: 20px 120px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	font-weight: 300;
+}
+
+.social {
+	text-align: center;
+
+	h3 {
+		color: $white;
+	}
+}
+
+.social ul.social-links {
+	display: flex;
+	flex-direction: row;
+	li {
+		display: inline;
+
+		a {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 4px 0 0 1px;
+			width: 32px;
+			height: 32px;
+			margin: 0 4px;
+			background: rgba(0, 0, 0, .5);
+			color: #fff;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+
+			&:hover {
+				background: rgba(0, 0, 0, .7);
+				color: #e74c3c;
+			}
+		}
+	}
+}
+
+// Hero header end
 
 
 
