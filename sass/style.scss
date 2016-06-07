@@ -36,7 +36,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Lato, Helvetica Nueue, sans-serif;
 	font-weight: 300;
 }
 
@@ -53,6 +52,7 @@ a {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
+	font-family: Lato, Helvetica Nueue, sans-serif;
 }
 
 img {
@@ -213,21 +213,96 @@ a.header-down-arrow {
 	display: flex;
 	justify-content: space-between;
 	align-items: space-between;
+	position: relative;
+
+	.wpcf7-not-valid-tip {
+		color: red;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top: 0px;
+		right: 245px;
+
+	}
+
+}
+
+.wpcf7-response-output.wpcf7-validation-errors,
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+	top: -45px;
+	position: relative;
+	border: 1px solid red;
+	padding: 20px;
+	text-align: center;
+}
+
+.wpcf7-response-output.wpcf7-validation-errors {
+	border: 1px solid red;
+}
+
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+		border: 1px solid $theme-blue;
 }
 
 .contact-form-info,
 .contact-form-message {
 	width: 50%;
+	margin-bottom: 48px;
 		input, textarea {
-			width: calc(100% - 20px);
-			margin: 0 10px;
+			width: calc(100% - 80px);
+			max-width: calc(100% - 80px);
+			max-height: 185px;
+			margin: 0 40px;
+			color: $theme-dark;
+		}
+
+		::-webkit-input-placeholder,
+		::-webkit-textarea-placeholder {
+			color: $theme-dark;
 		}
 }
 .contact-form-info {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+		input {
+			height: 48px;
+			margin-bottom: 20px;
+			border: none;
+			border-bottom: 1px solid $theme-dark;
+		}
 }
 
+.contact-form-message {
+	textarea {
+		border: none;
+		border-bottom: 1px solid $theme-dark;
+	}
+}
+
+.contact-form-submit {
+	margin-bottom: 86px;
+	text-align: center;
+
+	input {
+		height: 34px;
+		width: 180px;
+		text-transform: uppercase;
+		background: $theme-blue;
+		color: $white;
+		letter-spacing: 0.075rem;
+		font-weight: 100;
+		border: none;
+		border-radius: 2.5px;
+		cursor: pointer;
+		transition: .5s ease;
+		box-shadow: 0px 0px 1px 0.05px $theme-dark;
+
+		&:hover {
+			box-shadow: 0px 0px 5px 0.3px $theme-dark;
+		}
+	}
+}
 // Contact end
 // Footer start
 .footer {

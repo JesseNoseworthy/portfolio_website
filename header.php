@@ -8,7 +8,7 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100, 400,300,700,900' rel='stylesheet' type='text/css'>
 </head>
 
 
