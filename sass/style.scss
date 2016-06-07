@@ -179,13 +179,44 @@ a.header-down-arrow {
 	}
 }
 
-
-
-
 // Hero header end
+// About start
+.about {
+	height: auto;
+	padding: 48px 0;
+}
 
+.about-content {
+	display: flex;
 
+	.about-image {
+		width: calc(25% - 40px);
+		margin: 20px;
 
+		img {
+			width: 200px;
+			height: auto;
+		}
+	}
+
+	.about-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: calc(75% - 40px);
+		margin: 20px;
+	}
+}
+
+.about-headers {
+	h2 {
+		@extend %content-header;
+		color: $theme-blue;
+		margin-bottom: 24px;
+	}
+}
+
+// About end
 // Contact start
 .contact-intro {
 	display: flex;
