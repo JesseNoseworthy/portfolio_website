@@ -217,7 +217,93 @@ a.header-down-arrow {
 }
 
 // About end
+// Portfolio start
+.portfolio-item {
+	margin: 48px 0;
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+
+	.portfolio-content-image,
+	.portfolio-content-text {
+		margin: 0 24px;
+	}
+
+	.portfolio-content-image {
+		img {
+			height: auto;
+			width: 625px;
+		}
+	}
+
+	.portfolio-content-text {
+		height: 420px;
+		width: calc(100% - 525px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 96px;
+		text-align: left;
+
+		h2, 
+		h4,
+		ul {
+			margin-bottom: 12px;
+		}
+
+		h2 {
+			@extend %content-header ;
+		}
+	}
+
+	.portfolio-see-live-button {
+		position: absolute;
+		bottom: 110px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $theme-blue;
+		color: $white;
+		width: 125px;
+		height: 40px;
+		padding: 5px;
+		@extend %content-header;
+		font-size: 0.85rem;
+
+		h4 {
+			margin: 0;
+			padding: 0;
+
+		}
+	}
+}
+
+.portfolio-item:nth-child(even) {
+	.portfolio-see-live-button { 
+		left: 24px;
+	}
+}
+
+.portfolio-item:nth-child(odd) {
+	flex-direction: row;
+
+	.portfolio-content-text {
+		text-align: right;
+	}
+
+	.portfolio-see-live-button { 
+		right: 24px;
+	}
+}
+
+
+// Portfolio end
 // Contact start
+
+.contact-main {
+	// background: rgb(47,47, 47);
+	padding-bottom: 86px;
+}
 .contact-intro {
 	display: flex;
 	flex-direction: column;
@@ -308,7 +394,6 @@ a.header-down-arrow {
 }
 
 .contact-form-submit {
-	margin-bottom: 86px;
 	margin-right: 20px;
 	text-align: right;
 
