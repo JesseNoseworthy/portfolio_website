@@ -8,8 +8,8 @@
 			);
 
 			$portfolioQuery = new WP_Query($portfolioArgs);
-			if ( $portfolioQuery->have_posts() ) {
-				while ( $portfolioQuery->have_posts() ) {
+			if ( $portfolioQuery->have_posts() ):
+				while ( $portfolioQuery->have_posts() ):
 					$portfolioQuery->the_post();
 			?>
 				<section class="portfolio-item">
@@ -33,14 +33,12 @@
 							} 
 							?>
 						</ul>
-						<a class="portfolio-see-live-button" href=" <?php the_field('[portfolio_link'); ?> " target="_blank">
+						<a class="portfolio-see-live-button" href=" <?php the_field('portfolio_link'); ?> " target="_blank">
 							<h4>See live site</h4>
 						</a>
 					</article>
 				</section>
-			<?php
-				}
-			}
-			?>
+					<?php endwhile; ?>
+				<?php endif; ?>
 	</div>
 </div>

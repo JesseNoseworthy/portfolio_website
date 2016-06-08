@@ -217,8 +217,51 @@ a.header-down-arrow {
 }
 
 // About end
+// Skills start
+
+.skill-main {
+	background: $theme-dark;
+}
+
+.skill-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 24px 0;
+
+	.skill-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 24px;
+		width: calc(100% / 8 - 48px);
+		padding: 24px 0;
+
+		.devicons,
+		h5 {
+			color: $white;
+		}
+
+		.devicons {
+			font-size: 3.5rem;
+		}
+
+		h5 {
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 1rem;
+			margin-top: 24px;
+			letter-spacing: 1px;
+		}
+
+	}
+}
+
+// Skill end
 // Portfolio start
 .portfolio-item {
+	padding: 24px 0;
 	margin: 48px 0;
 	display: flex;
 	flex-direction: row-reverse;
@@ -296,7 +339,6 @@ a.header-down-arrow {
 	}
 }
 
-
 // Portfolio end
 // Contact start
 
@@ -372,6 +414,11 @@ a.header-down-arrow {
 			color: $theme-dark;
 			border: 1px solid lighten($theme-dark, 50%);
 			padding-left: 20px;
+
+			&:focus {
+				outline: none;
+				border: 1px solid $theme-blue;	
+			}
 		}
 
 		textarea {
@@ -429,14 +476,17 @@ a.header-down-arrow {
 	font-size: 1.075rem;
 	position: relative;
 
+	h2,
+	.menu,
+	.footer-email {
+		margin: 12px;
+	}
+
 	h2 {
 		text-transform: uppercase;
 		font-size: 2rem;
-		margin-bottom: 24px;
 	}
-	.footer-phone-email {
-		margin: 12px 0;
-	}
+
 	.menu {
 		@extend	#menu-social-links;
 	}
@@ -444,7 +494,6 @@ a.header-down-arrow {
 	.footer-email {
 		cursor: pointer;
 		transition: .3s ease;
-		margin-bottom: 24px;
 
 		&:hover {
 			color: $theme-dark;

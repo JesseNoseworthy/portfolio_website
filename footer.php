@@ -11,9 +11,7 @@
 	        'theme_location' => 'secondary'
 	      )); 
 	      ?> 
-	      <p class="footer-phone-email"><?php the_field('footer-phone'); ?></p>
-	      <span class="footer-email color-blue"><?php the_field('footer-email'); ?></span>
-	      <p><?php the_field('footer-location'); ?></p>
+	      <span class="footer-email"><?php the_field('footer-email'); ?></span>
 		</div>
 </footer>
 

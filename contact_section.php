@@ -2,11 +2,20 @@
   <div class="container">
     <div class="contact">
     	<div class="contact-intro">
-    		<h2><?php the_field('contact-form-header'); ?></h2>
-    		<h3><?php the_field('contact-form-subhead'); ?></h3>
+    	
+		<?php if(have_posts()){ ?>
+			<?php while(have_posts()){?>
+				<?php the_post()?>
+
+	    		<h2><?php the_field('contact-header'); ?></h2>
+				<h3><?php the_field('contact-subhead')?></h3>	    	
+    	<?php 
+    		}
+	 	}
+    	?>	
     	</div>
     	<?php echo do_shortcode( '[contact-form-7 id="25" title="bottom_contact"]' ); ?>	
-    </div> <!--/.content -->
+    </div> <!--/.contact -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
