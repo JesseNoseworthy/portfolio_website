@@ -20,10 +20,22 @@
 				?>
 					<article class="portfolio-content-image">
 						<?php $portfolioImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>	
-						<img src=" <?php echo $portfolioImage ?> "/>
+						<img src=" <?php echo $portfolioImage; ?> "/>
 					</article>
 					<article class="portfolio-content-text">
-						<h2><?php  the_title(); ?></h2>
+						<h2><?php the_title(); ?></h2>
+						<ul>
+							<!-- In order to get the categories without a link, we need to loop through them -->
+							<?php $categories = get_the_category(); ?>
+							<!-- Which is done right here -->
+							<?php foreach($categories as $category) { ?>
+							<!-- Then we grab the property and place it in a list item -->
+							<li><?php echo $category->cat_name; ?></li>
+							<?php
+							} 
+							?>
+						</ul>
+						<a href=" <?php the_field('portfolio_link'); ?> " target="_blank"><h4>See live site</h4></a>
 					</article>
 				<?php
 					}
