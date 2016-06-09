@@ -343,8 +343,9 @@ a.header-down-arrow {
 // Contact start
 
 .contact-main {
-	// background: rgb(47,47, 47);
+	background: #c8cdce;
 	padding-bottom: 86px;
+	padding: 12px 0;
 }
 .contact-intro {
 	display: flex;
@@ -466,7 +467,7 @@ a.header-down-arrow {
 // Contact end
 // Footer start
 .footer {
-	background: $theme-light;
+	background: #323333;
 	padding: 24px 0;
 	height: 262px;
 	display: flex;
@@ -480,6 +481,7 @@ a.header-down-arrow {
 	.menu,
 	.footer-email {
 		margin: 12px;
+		color: $theme-light;
 	}
 
 	h2 {
@@ -496,7 +498,7 @@ a.header-down-arrow {
 		transition: .3s ease;
 
 		&:hover {
-			color: $theme-dark;
+			color: $theme-blue;
 		}
 	}
 }
@@ -510,8 +512,8 @@ a.header-down-arrow {
 	padding: 4px 0;
 	width: 32px;
 	height: 32px;
-	background: $theme-light;
-	color: $theme-dark;
+	background: #323333;
+	color: $theme-light;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
