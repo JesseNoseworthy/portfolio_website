@@ -8,7 +8,9 @@
 		<!-- Text Slide start -->
 			<div class="header-text">
 				<ul class="text-slider">
-					<li class="text-slides">Front-End <span class="text-slides color-blue">Web Developer</span></li>
+					<!-- <li class="text-slides">Jesse is a <span class="color-blue">Web Developer</span></li> -->
+					<!-- <li class="text-slides">Jesse is a <span class="color-blue">Web Developer</span></li>
+					<li class="text-slides">Jesse is a <span class="color-blue">Web Developer</span></li> -->
 				</ul>
 			</div>
 			<!-- end Text Slide -->

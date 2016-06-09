@@ -54,10 +54,29 @@ portfolio.showCurrentSection = function() {
 	});
 }
 
+// portfolio.buttonBounce = function() {
+// 	$(".header-down-arrow").on('click', function (e) {
+// 	        e.preventDefault();
+// 	        $(this).effect( "bounce", { times : 3 }, 300);
+// 	    });
+// }
+
+portfolio.textSlider = function() {
+
+	 heroText = ['huh', 'wha?', 'yep'];
+​
+	setInterval( function() {
+	
+	$('.text-text').html().slideUp();
+}, 300);
+}
+
 portfolio.init = function() {
+	smoothScroll();
 	portfolio.showNavBar();
 	portfolio.showCurrentSection();
-	smoothScroll();
+	// portfolio.buttonBounce();
+	portfolio.textSlider();
 };
 
 $(document).ready(function () {
