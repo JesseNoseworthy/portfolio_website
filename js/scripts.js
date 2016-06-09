@@ -62,13 +62,20 @@ portfolio.showCurrentSection = function() {
 // }
 
 portfolio.textSlider = function() {
-
-	 heroText = ['huh', 'wha?', 'yep'];
-​
-	setInterval( function() {
-	
-	$('.text-text').html().slideUp();
-}, 300);
+	 $(window).load(function(){
+	  "use strict";
+	  $('.header-text').flexslider({
+	  animation: "slide",
+		selector: ".text-slider .text-slides",
+	  slideshowSpeed: 2000,  
+		controlNav: false,
+		directionNav: false ,
+		direction: "vertical",
+		start: function(slider){
+        $('.flexslider').resize();
+    }
+	  });
+	 });
 }
 
 portfolio.init = function() {

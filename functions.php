@@ -85,9 +85,25 @@ function hackeryou_scripts() {
     true //load in footer
   );
 
+
+  wp_enqueue_script(
+    'scripts', //handle
+    get_template_directory_uri() . '/js/jquery.flexslider.js', //source
+    array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
+
+function my_theme_scripts() {
+    wp_enqueue_script( 'jquery.flexslider', get_template_directory_uri() . '/js/jquery.flexslider.js', array( 'jquery' ), '1.0.0', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 
 /* Custom Title Tags */
 

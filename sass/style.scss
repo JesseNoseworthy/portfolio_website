@@ -24,7 +24,7 @@ $white: rgb(254, 254, 254);
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
-// @import 'flexslider';
+@import 'flexslider';
 /*
 ====================================
 Default Styling
@@ -192,17 +192,20 @@ body {
 	}
 }
 
-li.text-slides {
+.header-text {
 	color: $white;
 	font-size: 2.5rem;
 	line-height: 56px;
 	text-align: center;
 	background: rgba(0, 0, 0, .4);
-	padding: 20px 120px;
+	padding: 20px 60px;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 	margin-bottom: 56px;
+	width: 55%;
 }
+
+
 .color-blue {
 	color: $theme-blue;
 }
