@@ -1,6 +1,6 @@
 <div class="main contact-main">
   <div class="container">
-    <div class="contact">
+    <div class="contact section" id="contact">
     	<div class="contact-intro">
     	
 		<?php if(have_posts()){ ?>

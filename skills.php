@@ -7,7 +7,6 @@
 		?>
 			 <div class="skill-items">
 				<p><?php echo $skillIcon ?></p>
-				<h5><?php echo $skillTitle ?></h5>
 			</div> <!-- /. skill-items -->
 		
 		<?php endwhile; ?>

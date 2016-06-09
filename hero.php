@@ -1,6 +1,6 @@
 <div class="main">
 	<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
-  <div class="hero" style="background: url('<?php echo $background[0]; ?>'); ?> ; background-size: cover;">
+  <div id="home" class="hero" style="background: url('<?php echo $background[0]; ?>'); ?> ; background-size: cover;">
 	  <div class="hero-content" id="top">
 		  <?php // Start the loop ?>
 		  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

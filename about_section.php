@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main section" id="about">
   <?php 
 	  // Get the tiled-background
 	  $about_background_tile = get_field('about-background-tile'); 
@@ -11,7 +11,7 @@
 	  // Get the image within the content
 	  $about_headshot = get_field('about-image');
   ?>
-    <div id="about" class="about" style="background: url(' <?php echo $about_background_tile_url ?> ') left top repeat, url(' <?php echo $about_background_full_url ?> ') center center fixed; ">
+    <div class="about" style="background: url(' <?php echo $about_background_tile_url ?> ') left top repeat, url(' <?php echo $about_background_full_url ?> ') center center fixed; ">
 		<div class="container">
 			<div class="about-content">
 				<div class="about-image">

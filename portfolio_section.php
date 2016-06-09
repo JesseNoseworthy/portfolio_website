@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="portfolio-content">
+	<div class="portfolio-content section" id="portfolio">
 		<?php  
 			$portfolioArgs = array(
 				'post_type' => 'portfolio',
