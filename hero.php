@@ -1,6 +1,6 @@
 <div class="main">
 	<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
-  <div id="home" class="hero" style="background: url('<?php echo $background[0]; ?>'); ?> ; background-size: cover;">
+  <div id="home" class="hero" style="background: linear-gradient(rgba(57,57,57,0.5), rgba(57,57,57,0.5)), url('<?php echo $background[0]; ?>'); ?> ; background-size: cover;">
 	  <div class="hero-content" id="top">
 		  <?php // Start the loop ?>
 		  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -9,8 +9,9 @@
 			<div class="header-text">
 				<ul class="text-slider">
 					<li class="text-slides">Front-end <span class="color-blue">Web Developer</span></li>
-					<li class="text-slides">Freelance <span class="color-blue">Journalist</span></li>
-					<li class="text-slides">Cycling <span class="color-blue">Enthusiast</span></li>
+					<li class="text-slides">Slightly addicted to <span class="color-blue">calc()</span></li>
+					<li class="text-slides">Programming since <span class="color-blue">2015</span></li>
+					<!--  Slightly addicted to calc(), Computer programmer, developing since 2015, Comfortable with multiple languages, The guy who put the sass in SCSS, JS: Jesse's safehaven, I code while I'm dreaming, I put the fun in function, I react well to JS frameworks,  -->
 				</ul>
 			</div>
 			<!-- end Text Slide -->

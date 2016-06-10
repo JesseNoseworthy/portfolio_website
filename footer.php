@@ -11,7 +11,7 @@
 	        'theme_location' => 'secondary'
 	      )); 
 	      ?> 
-	      <span class="footer-email"><?php the_field('footer-email'); ?></span>
+	      <a href="mailto:<?php the_field('footer-email'); ?>"><span class="footer-email"><?php the_field('footer-email'); ?></span></a>
 		</div>
 </footer>
 

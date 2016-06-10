@@ -28,7 +28,7 @@
 							<!-- Which is done right here -->
 							<?php foreach($categories as $category) { ?>
 							<!-- Then we grab the property and place it in a list item -->
-							<li><?php echo $category->cat_name; ?>,</li>
+							<li><?php echo $category->cat_name; ?>.</li>
 							<?php
 							} 
 							?>
