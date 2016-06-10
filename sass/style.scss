@@ -622,3 +622,42 @@ a.header-down-arrow {
 	}
 }
 // Footer end
+
+// 404 styles
+
+.not-found {
+	color: white;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.not-found-head,
+.not-found-sub,
+.not-found-text {
+	margin-bottom: 15px;
+}
+
+.not-found-head {
+	font-size: 6rem;
+}
+
+.not-found-sub {
+	font-size: 2rem;
+}
+
+.not-found-text {
+	font-size: 1.5rem;
+
+	a {
+		color: white;
+		border-bottom: 2px solid $theme-blue;
+		transition: .5s ease;
+
+		&:hover {
+			font-weight: 500;
+		}
+	}
+}
