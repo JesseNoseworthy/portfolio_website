@@ -10,7 +10,11 @@
   <?php wp_head(); ?>
   <link href='https://fonts.googleapis.com/css?family=Lato:100, 400,300,700,900' rel='stylesheet' type='text/css'>
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
+
+<!-- Page loader -->
+<div class="loader"></div>
 
 <section id="navigation" class="hide-nav">
   <!-- Navigation Container -->

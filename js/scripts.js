@@ -10,7 +10,17 @@ var smoothScroll = function() {
 	  });
 }
 
-// Show navigation bar.
+// Page loader
+portfolio.loader = function() {
+	// On load of the page
+	$(window).load(function() {
+		// We will fade out the class of 
+		// .loader in 1.25 seconds
+		$(".loader").fadeOut(1250);
+	})
+}
+
+// Show navigation bar
 portfolio.showNavBar = function() {
 	// Store the navbar in a variable
 	var menu = $('#navigation');
@@ -63,13 +73,7 @@ portfolio.showCurrentSection = function() {
 	});
 }
 
-// portfolio.buttonBounce = function() {
-// 	$(".header-down-arrow").on('click', function (e) {
-// 	        e.preventDefault();
-// 	        $(this).effect( "bounce", { times : 3 }, 300);
-// 	    });
-// }
-
+// Text slider
 portfolio.textSlider = function() {
 	 $(window).load(function(){
 	  "use strict";
@@ -81,18 +85,27 @@ portfolio.textSlider = function() {
 		directionNav: false ,
 		direction: "vertical",
 		start: function(slider){
-        $('.flexslider').resize();
-    }
-	  });
-	 });
+			$('.flexslider').resize();
+		}
+		});
+	});
+}
+
+// Media query to remove secondary-text-sliders at 700px
+portfolio.removeSlider = function() {
+	var windowWidth = $(window).width();
+	if(windowWidth < 768){
+		$('.secondary-text-slide').remove();
+	}
 }
 
 portfolio.init = function() {
 	smoothScroll();
 	portfolio.showNavBar();
 	portfolio.showCurrentSection();
-	// portfolio.buttonBounce();
 	portfolio.textSlider();
+	portfolio.loader();
+	portfolio.removeSlider();
 };
 
 $(document).ready(function () {

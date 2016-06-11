@@ -9,8 +9,8 @@
 			<div class="header-text">
 				<ul class="text-slider">
 					<li class="text-slides">Front-end <span class="color-blue">Web Developer</span></li>
-					<li class="text-slides">Slightly addicted to <span class="color-blue">calc()</span></li>
-					<li class="text-slides">Programming since <span class="color-blue">2015</span></li>
+					<li class="text-slides secondary-text-slide">I put the fun in <span class="color-blue">function</span></li>
+					<li class="text-slides secondary-text-slide">Slightly addicted to <span class="color-blue">calc()</span></li>
 					<!--  Slightly addicted to calc(), Computer programmer, developing since 2015, Comfortable with multiple languages, The guy who put the sass in SCSS, JS: Jesse's safehaven, I code while I'm dreaming, I put the fun in function, I react well to JS frameworks,  -->
 				</ul>
 			</div>
