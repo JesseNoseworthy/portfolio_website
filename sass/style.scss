@@ -204,6 +204,8 @@ body {
 		font-weight: 300;
 		font-size: 3.6rem;
 		margin-bottom: 32px;
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -888,14 +890,30 @@ a.header-down-arrow {
 
 @media screen and (max-width: 450px) {
 	#navigation {
+		display: none;
+		visibility: hidden;
+		top: -500px;
+	}
+
+	a.header-down-arrow {
+		visibility: hidden;
+	}
+
+	#navigation {
 		padding: 0 5px;
 	}
 		
 	.hero-content {
 		h1 {
 			font-size: 2.5rem;
+			margin-top: 40px;
 		}
 	}
+	.header-text {
+		width: 90%;
+		margin: 0 5% 60px 5%;
+	}
+
 	.text-slider {
 		.text-slides {
 			font-size: 1.2rem;
