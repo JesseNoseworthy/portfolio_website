@@ -505,9 +505,11 @@ a.header-down-arrow {
 .wpcf7-response-output.wpcf7-mail-sent-ok {
 	top: -45px;
 	position: relative;
-	border: 1px solid red;
 	padding: 20px;
 	text-align: center;
+	display: block;
+	width: 40%;
+	margin: 80px 30% 0px 30%;
 }
 
 .wpcf7-response-output.wpcf7-validation-errors {
