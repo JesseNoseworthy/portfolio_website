@@ -14,7 +14,22 @@
 	 	}
     	?>	
     	</div>
-    	<?php echo do_shortcode( '[contact-form-7 id="25" title="bottom_contact"]' ); ?>	
+        <form action="http://www.focuspocus.io/magic/noseworthyjesse@gmail.com" 
+            method="POST">
+            <div class="contact-form-content">
+                <div class="contact-form-info">
+                     <input required type="text" name="name" placeholder="name">
+                      <input required type="email" name="email" placeholder="email">
+                      <input type="text" name="phone" placeholder="phone">
+                </div>
+                <div class="contact-form-message">
+                      <textarea required name="messages" placeholder="message"></textarea>
+                </div>
+            </div>
+            <div class="contact-form-submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form> 
     </div> <!--/.contact -->
 
   </div> <!-- /.container -->

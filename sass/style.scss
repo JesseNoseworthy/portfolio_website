@@ -490,40 +490,13 @@ a.header-down-arrow {
 	align-items: space-between;
 	position: relative;
 	height: 210px;
-
-	.wpcf7-not-valid-tip {
-		color: red;
-		text-align: center;
-		position: absolute;
-		z-index: 1;
-		top: 5px;
-		right: 245px;
-	}
-}
-
-.wpcf7-response-output.wpcf7-validation-errors,
-.wpcf7-response-output.wpcf7-mail-sent-ok {
-	top: -45px;
-	position: relative;
-	padding: 20px;
-	text-align: center;
-	display: block;
-	width: 40%;
-	margin: 80px 30% 0px 30%;
-}
-
-.wpcf7-response-output.wpcf7-validation-errors {
-	border: 1px solid red;
-}
-
-.wpcf7-response-output.wpcf7-mail-sent-ok {
-		border: 1px solid $theme-blue;
 }
 
 .contact-form-info,
 .contact-form-message {
 	width: 50%;
 	margin-bottom: 48px;
+	height: 190px;
 		input, textarea {
 			width: calc(100% - 80px);
 			max-width: calc(100% - 80px);
@@ -541,6 +514,7 @@ a.header-down-arrow {
 
 		textarea {
 			padding-top: 15px;
+			height: 175px;
 		}
 
 		::-webkit-input-placeholder,
@@ -553,13 +527,13 @@ a.header-down-arrow {
 	flex-direction: column;
 	justify-content: flex-start;
 		input {
-			height: 48px;
-			margin-bottom: 20px;
+			height: 50px;
+			margin-bottom: 15px;
 		}
 }
 
 .contact-form-submit {
-	margin-right: 20px;
+	margin-right: 43px;
 	text-align: right;
 
 	input {
