@@ -13,9 +13,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
-<!-- Page loader -->
-<div class="loader"></div>
-
 <section id="navigation" class="hide-nav">
   <!-- Navigation Container -->
   <div class="nav-container">

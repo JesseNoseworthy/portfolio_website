@@ -1,3 +1,6 @@
+<!-- Page loader -->
+<div class="loader"></div>
+
 <div class="main">
 	<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
   <div id="home" class="hero" style="background: linear-gradient(rgba(57,57,57,0.5), rgba(57,57,57,0.5)), url('<?php echo $background[0]; ?>'); ?> ; background-size: cover; background-attachment: fixed;">

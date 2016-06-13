@@ -80,7 +80,7 @@ portfolio.textSlider = function() {
 	  $('.header-text').flexslider({
 	  animation: "slide",
 		selector: ".text-slider .text-slides",
-	  slideshowSpeed: 2000,  
+	  slideshowSpeed: 2800,  
 		controlNav: false,
 		directionNav: false ,
 		direction: "vertical",
