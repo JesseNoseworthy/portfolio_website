@@ -225,3 +225,8 @@ p.form-allowed-tags, .nocomments {
 #respond p, #comments-list ul #respond {
 	margin: 0;
 }
+
+#commentform {
+	display: flex;
+	flex-direction: column;
+}

@@ -2,10 +2,12 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
-
-    <div class="content">
-    		<?php get_template_part( 'loop', 'index' );	?>
+	<div class="blog-head">
+		<h1>Blog</h1>
+	</div>
+	<div class="container">
+	    <div class="content">
+		<?php get_template_part( 'loop', 'index' );	?>
     </div> <!--/.content -->
 
     <?php get_sidebar(); ?>

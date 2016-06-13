@@ -656,6 +656,46 @@ a.header-down-arrow {
 	}
 }
 
+// Blog section styling 
+.blog-head {
+	h1 {
+		font-size: 4.25rem;
+		text-align: center;
+		padding: 50px 0;
+		width: 100%;
+		color: $white;
+		background: $theme-dark;
+		text-transform: lowercase;
+		letter-spacing: 0.055rem;
+		margin-bottom: 50px;
+	}
+}
+
+.sidebar ul {
+	padding-top: 50px;
+}
+
+.entry-title {
+	font-size: 2.5rem;
+	padding: 50px 0 0 0;
+}
+
+.entry-content {
+	letter-spacing: 0.065rem;
+	margin: 50px 0;
+
+	p {
+		margin-bottom: 25px;
+	}
+	.graf--p {
+		width: 100%;
+
+		img {
+			margin: 25px 0;
+		}
+	}
+}
+
 // Media queries 
 @media screen and (max-width: 1315px) {
 	.text-slider {
